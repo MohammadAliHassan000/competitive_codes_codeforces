@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "ostream": "cpp",
+        "iostream": "cpp",
+        "iomanip": "cpp",
+        "random": "cpp",
+        "unordered_map": "cpp"
+    },
+    "cph.general.onceMaintainerMessage": false
+}

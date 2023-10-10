@@ -33,17 +33,34 @@ typedef queue<int> qInt;
  
 void solve()
 {
-    ll n;
-    cin>>n;
-    // cout<<"n1 "<<n<<endl;
-    ll sum=0;
-    while(n!=1)
+    int n;
+    cin >> n;
+    int a, b, c;
+    // cout << "n " << n << endl;
+    if(n<7)
+        cout << "NO" << endl;
+    else if(n%3==0)
     {
-        sum+=n;
-        n=n/2;
-        // cout<<"n "<<n<<endl;
+        a = 1, b = 4, c = n - 5;
+        if(c==1 || c==4)
+            cout << "NO" << endl;
+        else {
+            cout << "YES" << endl;
+            cout << a << " " << b << " " << c << endl;
+        }
+
     }
-    cout<<sum+1<<endl;
+    else 
+    {
+        a = 1, b = 2, c = n - 3;
+        if(c==1 || c==2)
+            cout << "NO" << endl;
+        else 
+        {
+            cout << "YES" << endl;
+            cout << a << " " << b << " " << c << endl;
+        }
+    }
 }
 signed main()
 {
